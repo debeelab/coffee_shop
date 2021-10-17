@@ -155,7 +155,10 @@ def delete_drink(payload, drink_id):
         drink = drink = Drink.query.filter(Drink.id == drink_id).one_or_none()
         if drink:
             drink.delete()
-            return json.dumps({'success': True, 'drink': drink_id}), 200
+            return json.dumps({
+                'success': True, 
+                'drink': drink_id
+                }), 200
         else:
             return json.dumps({
                 'success':
