@@ -65,6 +65,10 @@ lib/
 ./Lib/
 ./Lib/*
 Lib/*
+Scripts/
+Scripts/*
+./Scripts/
+./Scripts/*
 lib64/
 parts/
 sdist/
